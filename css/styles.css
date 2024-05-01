@@ -1,0 +1,101 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font weights: 
+Default  : 400
+Medium   : 500
+Semi-bold: 
+Bold     : 700
+
+- Line heights: 
+Default: 1
+Small: 1.05
+Paragraph default: 1.6
+
+
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+--- 02 COLORS
+
+- Primary  : #ff9f00
+- Secondary: #ef7402
+- FrameColor: #444
+- ScoreLine: #353535
+- Tinst: #73706d
+- Shades: #2e2e2e
+- Accents: 
+- Greys: 
+
+
+--- 05 SHADOWS
+video shadow : #000000cc
+
+--- 06 BORDER-RADIUS
+
+Default: 30px
+
+--- 07 WHITESPACE
+
+padding: 6.4rem 5.2rem
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Rajdhani, helvetica, arial, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.fw-500 {
+  font-weight: 500; /* Medium font weight */
+}
+
+.fw-700 {
+  font-weight: 700; /* Bold font weight */
+}
+
+.ls-1 {
+  letter-spacing: 0.1em; /* Adjust the value as needed */
+}
+
+.ls-2 {
+  letter-spacing: 0.2em; /* Adjust the value as needed */
+}
+
+.text-hover:hover,
+.text-hover:active,
+.text-hover:focus {
+  color: #ef7402; /* Change the color to your desired color */
+}
+
+.navbar-nav .nav-item.dropdown:hover .nav-link.dropdown-toggle,
+.navbar-nav .nav-item.dropdown:hover .nav-link.dropdown-toggle:hover {
+  color: #ef7402; /* Change to your desired hover color */
+  /* Add other hover styles as needed */
+}
+
+/* Add this to style the dropdown menu */
+.navbar-nav .nav-item.dropdown .dropdown-menu {
+  border: none;
+  box-shadow: none;
+}
+
+/* Add this to ensure the dropdown menu appears above other content */
+.dropdown-menu.dropdown-hover {
+  position: absolute;
+}
+
+/* html {
+  font-size: 62.5%;
+} */
