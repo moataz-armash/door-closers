@@ -96,6 +96,81 @@ body {
   position: absolute;
 }
 
+nav {
+  max-height: 4.6rem;
+}
+
+// --------------- Hero Section ------------------
+.video-section {
+  position: relative;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Set z-index to place the video behind other content */
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.video-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.video-text strong {
+  line-height: 3.2rem;
+  color: #2c3e50;
+  font-size: 3.6rem;
+}
+
+// Glass Card
+
+p {
+  margin: 0;
+}
+
+p:not(:last-child) {
+  margin-bottom: 2.5em;
+}
+
+.hero-title {
+  color: #ff9f00;
+}
+
+.video-card {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  max-width: 700px;
+  height: 350px;
+  padding: 45px;
+
+  border: 1px solid #2c3e50;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+  backdrop-filter: blur(15px);
+}
+
+.space {
+  margin-top: 45rem;
+}
+
 /* html {
   font-size: 62.5%;
 } */
